@@ -8,11 +8,35 @@ var relayr = RELAYR.init({
   redirectUri: "https://pepperrs.github.io/set-hackathon-website/src/index.html"
 });
 
+
+
+
+var adata;
+var dataa = [];
+
+
 relayr.login({
   success: function(token){
             console.log(token);
-    relayr.devices().getAllDevices(function(devices){
-            console.log(devices);
-    });
+
+
+        // create a new queue
+
+        relayr.devices().getDeviceData({
+        token: token,
+        deviceId: "b931d888-1f4e-4b8a-a526-c781350e59db",
+        incomingData: function(data) {
+        console.log("data from device", data);
+        adata = data;
+        //dataa.push(adata.readings[0].value);
+
+
+    // relayr.devices().getAllDevices(function(devices){
+    //         console.log(devices);
+    // });
   }
 });
+
+
+
+
