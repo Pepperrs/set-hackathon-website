@@ -27,15 +27,15 @@ relayr.login({
             adata = data;
             console.log(data.readings[0].path + " is " + data.readings[0].value);
             if (data.readings[0].value) {
-                $("." + data.readings[0].path).addClass("green");
+                $("#" + data.readings[0].path).addClass("green");
 
-                $("." + data.readings[0].path).removeClass("red");
+                $("#" + data.readings[0].path).removeClass("red");
             }
             else {
 
-                $("." + data.readings[0].path).addClass("red");
+                $("#" + data.readings[0].path).addClass("red");
 
-                $("." + data.readings[0].path).removeClass("green");
+                $("#" + data.readings[0].path).removeClass("green");
             }
             //dataa.push(adata.readings[0].value);
             }
