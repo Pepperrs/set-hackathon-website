@@ -9,11 +9,6 @@ var relayr = RELAYR.init({
 });
 
 
-$("#map").append("<div id='path_1' class='box red' ></div>");
-$("#map").append("<div id='path_2' class='box red' ></div>");
-$("#map").append("<div id='path_3' class='box red' ></div>");
-$("#map").append("<div id='path_4' class='box red' ></div>");
-
 var adata;
 var dataa = [];
 
@@ -31,6 +26,17 @@ relayr.login({
         incomingData: function(data) {
             adata = data;
             console.log(data.readings[0].path + " is " + data.readings[0].value);
+            if (data.readings[0].value) {
+                $("." + data.readings[0].path).addClass("green");
+
+                $("." + data.readings[0].path).removeClass("red");
+            }
+            else {
+
+                $("." + data.readings[0].path).addClass("red");
+
+                $("." + data.readings[0].path).removeClass("green");
+            }
             //dataa.push(adata.readings[0].value);
             }
         })
