@@ -9,14 +9,13 @@ var relayr = RELAYR.init({
 });
 
 
+            console.log("init!")
 
 relayr.login({
   success: function(token){
-    relayr.devices().getAllDevices(function(devices){
             console.log("small SUCCESSSSS!")
-        relayr.devices().getAllDevices(function(devices){
+    relayr.devices().getAllDevices(function(devices){
             console.log("SUCCESSSSS!")
-        });
     });
   }
 });
