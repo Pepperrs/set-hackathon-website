@@ -13,6 +13,7 @@ var relayr = RELAYR.init({
 relayr.login({
   success: function(token){
     relayr.devices().getAllDevices(function(devices){
+            console.log("small SUCCESSSSS!")
         relayr.devices().getAllDevices(function(devices){
             console.log("SUCCESSSSS!")
         });
