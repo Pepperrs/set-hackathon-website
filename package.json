@@ -1,0 +1,44 @@
+{
+  "name": "fend_5_neighborhood_map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.8",
+    "knockout": "^3.4.0",
+    "critical": "^0.7.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.2",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-csso": "^1.0.1",
+    "gulp-if": "^2.0.0",
+    "gulp-image-resize": "^0.7.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uncss": "^1.0.4",
+    "gulp-useref": "^3.0.6",
+    "gulp-util": "^3.0.7",
+    "imagemin-mozjpeg": "^5.1.0",
+    "jshint": "^2.9.1",
+    "run-sequence": "^1.1.5"
+  },
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pepperrs/neighborhood-map.git"
+  },
+  "author": "Peter Schuellermann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pepperrs/neighborhood-map/issues"
+  },
+  "homepage": "https://github.com/Pepperrs/neighborhood-map#readme"
+}
