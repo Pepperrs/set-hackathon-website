@@ -9,7 +9,10 @@ var relayr = RELAYR.init({
 });
 
 
-
+$("#map").append("<div id='path_1' class='box red' ></div>");
+$("#map").append("<div id='path_2' class='box red' ></div>");
+$("#map").append("<div id='path_3' class='box red' ></div>");
+$("#map").append("<div id='path_4' class='box red' ></div>");
 
 var adata;
 var dataa = [];
@@ -27,7 +30,7 @@ relayr.login({
         deviceId: "b931d888-1f4e-4b8a-a526-c781350e59db",
         incomingData: function(data) {
             adata = data;
-            console.log(data.readings[0].path + "is" + data.readings[0].value);
+            console.log(data.readings[0].path + " is " + data.readings[0].value);
             //dataa.push(adata.readings[0].value);
             }
         })
