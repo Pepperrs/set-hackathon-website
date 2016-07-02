@@ -8,14 +8,11 @@ var relayr = RELAYR.init({
   redirectUri: "https://pepperrs.github.io/set-hackathon-website/src/index.html"
 });
 
-
-            console.log("init!")
-
 relayr.login({
   success: function(token){
-            console.log("small SUCCESSSSS!")
+            console.log(token);
     relayr.devices().getAllDevices(function(devices){
-            console.log("SUCCESSSSS!")
+            console.log(devices);
     });
   }
 });
