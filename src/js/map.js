@@ -12,6 +12,21 @@ var relayr = RELAYR.init({
 var adata;
 var dataa = [];
 
+var redStyle = {
+  strokeColor: 'red',
+  fillColor: 'rgba(255, 0, 0, 0.5',
+  lineWidth: 10,
+  lineCap: 'square',
+  lineJoin: 'bevel'
+};
+
+var greentyle = {
+  strokeColor: 'green',
+  fillColor: 'rgba(0, 255, 0, 0.5',
+  lineWidth: 10,
+  lineCap: 'square',
+  lineJoin: 'bevel'
+};
 
 // initialize map
 var platform = new H.service.Platform({
@@ -26,7 +41,6 @@ var platform = new H.service.Platform({
 var defaultLayers = platform.createDefaultLayers();
 
 // Instantiate (and display) a map object:
-console.log()
 var map = new H.Map(
   document.getElementById('map'),
   defaultLayers.normal.map,
@@ -34,6 +48,21 @@ var map = new H.Map(
     zoom: 10,
     center: { lat: 52.5, lng: 13.4 }
   });
+
+
+
+
+// Create a rectangle and pass the custom style as an options parameter:
+var smartSpace_1 = new H.map.Rect(new H.geo.Rect(53.5, 12.5, 51.5, 14.5),
+  { style: redStyle });
+
+// Add the rectangle to the map:
+map.addObject(smartSpace_1);
+
+
+
+
+
 
 
 relayr.login({
