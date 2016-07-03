@@ -46,14 +46,14 @@ var map = new H.Map(
   defaultLayers.normal.map,
   {
     zoom: 15,
-    center: { lat: 53.3020, lng: 13.2334 }
+    center: { lat: 52.3020, lng: 13.2334 }
   });
 
 
 
 
 // Create a rectangle and pass the custom style as an options parameter:
-var smartSpace_1 = new H.map.Rect(new H.geo.Rect(53.30204, 13.23340, 53.30404, 13.23540),
+var smartSpace_1 = new H.map.Rect(new H.geo.Rect(52.30204, 13.23340, 52.30404, 13.23540),
   { style: redStyle });
 // Add the rectangle to the map:
 map.addObject(smartSpace_1);
