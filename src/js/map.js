@@ -45,7 +45,7 @@ var map = new H.Map(
   document.getElementById('map'),
   defaultLayers.normal.map,
   {
-    zoom: 20,
+    zoom: 18,
     center: { lat: 52.505672, lng: 13.392763 }
   });
 
