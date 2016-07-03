@@ -53,15 +53,15 @@ var map = new H.Map(
 // Create a rectangle and pass the custom style as an options parameter:
 // Add the rectangle to the map:
 
-smartSpace = []
-[0,1,2,3].forEach(function(i) {
-    smartSpace.add(new H.map.Rect(new H.geo.Rect(52.505672 + i*0.00002, 13.392763, 52.505772 + i*0.00002, 13.392823),
+smartSpace = [];
+
+var times = 4;
+for(var i=0; i < times; i++){    smartSpace.add(new H.map.Rect(new H.geo.Rect(52.505672 + i*0.00002, 13.392763, 52.505772 + i*0.00002, 13.392823),
       { style: redStyle })
     );
 
     map.addObject(smartSpace[i]);
-});
-
+}
 
 
 
