@@ -82,8 +82,6 @@ relayr.login({
         token: token,
         deviceId: "b931d888-1f4e-4b8a-a526-c781350e59db",
         incomingData: function(data) {
-            adata = data;
-            console.log(data.readings[0].path + " is " + data.readings[0].value);
             if (data.readings[0].value) {
 
                 pathToSmartSpace(data.readings[0].path).setStyle(greenStyle);
