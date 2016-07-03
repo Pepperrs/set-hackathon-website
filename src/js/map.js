@@ -15,8 +15,9 @@ var dataa = [];
 
 // initialize map
 var platform = new H.service.Platform({
-  'app_id': 'vsQZSmhujvOERj1pbKY8',
-  'app_code': 'ZxL5RxiGcIISDFlQ7V3irQ'
+    'app_id': 'vsQZSmhujvOERj1pbKY8',
+    'app_code': 'ZxL5RxiGcIISDFlQ7V3irQ',
+    useHTTPS: true
 });
 
 
