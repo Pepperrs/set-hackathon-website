@@ -59,7 +59,7 @@ var times = 4;
 for(var i=0; i < times; i++){
     smartSpace.push(
         new H.map.Rect(
-            new H.geo.Rect(52.505672 + i*0.00002, 13.392763, 52.505772 + i*0.00002, 13.392823),
+            new H.geo.Rect(52.505672 + i*0.00010, 13.392763, 52.505772 + i*0.00010, 13.392823),
                 { style: redStyle }
         )
     );
