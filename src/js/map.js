@@ -99,7 +99,7 @@ relayr.login({
 
 function pathToSmartSpace(path) {
      spaceID = path.match(/\d+/)[0];
-    spaceID++;
+    spaceID--;
     return smartSpace[spaceID];
 
 }
