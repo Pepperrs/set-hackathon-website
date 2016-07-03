@@ -20,7 +20,7 @@ var redStyle = {
   lineJoin: 'bevel'
 };
 
-var greentyle = {
+var greenStyle = {
   strokeColor: 'green',
   fillColor: 'rgba(0, 255, 0, 0.5',
   lineWidth: 1,
@@ -85,17 +85,20 @@ relayr.login({
             adata = data;
             console.log(data.readings[0].path + " is " + data.readings[0].value);
             if (data.readings[0].value) {
-                $("#" + data.readings[0].path).addClass("green");
 
-                $("#" + data.readings[0].path).removeClass("red");
+                pathToSmartSpace(data.readings[0].path).setStyle(greenStyle);
             }
             else {
-
-                $("#" + data.readings[0].path).addClass("red");
-
-                $("#" + data.readings[0].path).removeClass("green");
+                pathToSmartSpace(data.readings[0].path).setStyle(redStyle);
             }
-            //dataa.push(adata.readings[0].value);
+
             }
         })
     }});
+
+
+function pathToSmartSpace(path) {
+     spaceID = path.match(/\d+/)[0];
+    return smartSpace[spaceID];
+
+}
