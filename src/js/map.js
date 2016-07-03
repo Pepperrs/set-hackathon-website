@@ -15,7 +15,7 @@ var dataa = [];
 var redStyle = {
   strokeColor: 'red',
   fillColor: 'rgba(255, 0, 0, 0.5',
-  lineWidth: 10,
+  lineWidth: 1,
   lineCap: 'square',
   lineJoin: 'bevel'
 };
@@ -23,7 +23,7 @@ var redStyle = {
 var greentyle = {
   strokeColor: 'green',
   fillColor: 'rgba(0, 255, 0, 0.5',
-  lineWidth: 10,
+  lineWidth: 1,
   lineCap: 'square',
   lineJoin: 'bevel'
 };
@@ -45,11 +45,9 @@ var map = new H.Map(
   document.getElementById('map'),
   defaultLayers.normal.map,
   {
-    zoom: 15,
-    center: { lat: 52.3020, lng: 13.2334 }
+    zoom: 17,
+    center: { lat: 52.505672, lng: 13.392763 }
   });
-
-
 
 
 // Create a rectangle and pass the custom style as an options parameter:
